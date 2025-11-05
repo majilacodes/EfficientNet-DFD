@@ -1,0 +1,16 @@
+{
+    "EfficientNetB0": {
+        "test_accuracy": 86.2,
+        "parameters": 4008829
+    },
+    "MobileNetV3Small": {
+        "test_accuracy": 77.0,
+        "parameters": 1518881
+    },
+    "execution_time_minutes": 35.712540447711945,
+    "dataset_info": {
+        "train_size": 1000,
+        "val_size": 500,
+        "test_size": 500
+    }
+}
