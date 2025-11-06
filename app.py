@@ -1,8 +1,3 @@
-"""
-FastAPI Deepfake Detection Application
-Supports EfficientNet-B0 and MobileNet-V3 Small models
-"""
-
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -810,18 +805,6 @@ async def home():
                             ${pred.prediction}
                         </div>
                         <div class="metrics-grid">
-                            <div class="metric-item">
-                                <div class="metric-label">Confidence</div>
-                                <div class="metric-value">${pred.confidence}%</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-label">Real Probability</div>
-                                <div class="metric-value">${pred.probability_real}%</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-label">Fake Probability</div>
-                                <div class="metric-value">${pred.probability_fake}%</div>
-                            </div>
                             <div class="metric-item">
                                 <div class="metric-label">Inference Time</div>
                                 <div class="metric-value">${pred.inference_time_ms}ms</div>
